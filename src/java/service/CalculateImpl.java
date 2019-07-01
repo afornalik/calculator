@@ -17,9 +17,8 @@ public class CalculateImpl implements Calculate {
     }
 
     @Override
-    public BigDecimal divide(BigDecimal firstNumber, BigDecimal secondNumber) {
-
-        return tryDivide(firstNumber,secondNumber);
+    public BigDecimal divide(BigDecimal firstNumber, BigDecimal secondNumber) throws ArithmeticException{
+        return firstNumber.divide(secondNumber);
     }
 
     @Override
@@ -27,13 +26,5 @@ public class CalculateImpl implements Calculate {
         return firstNumber.multiply(secondNumber);
     }
 
-    private BigDecimal tryDivide(BigDecimal firstNumber, BigDecimal secondNumber) {
-        BigDecimal result = BigDecimal.ZERO;
-        try {
-            result = firstNumber.divide(secondNumber, 2);
-        }catch(Exception e) {
-            e.printStackTrace();
-        }
-        return result;
-    }
+
 }

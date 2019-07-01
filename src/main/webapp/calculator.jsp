@@ -17,38 +17,38 @@
     <form method="post" action="calculator">
         <div class="form-group col-6 fa fa-hand-o-down">
             <label for="f1">first number</label>
-            <input type="number" name="firstNumber" class="form-control" id="f1"/>
+            <input type="number" name="firstNumber" class="form-control" id="f1" value="${fNumber}"/>
         </div>
 
         <div class="form-group col-6  fa fa-hand-o-down">
             <label for="f2">second number</label>
-            <input type="number" name="secondNumber" class="form-control" id="f2"/>
+            <input type="number" name="secondNumber" class="form-control" id="f2" value="${sNumber}"/>
         </div>
         <!-- Default inline 1-->
         <div class="form-group col-6 mt-3">
             <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" class="custom-control-input" id="defaultInline1" name="inlineDefaultRadiosExample"
-                       value="1">
+                <input type="radio" class="custom-control-input" id="defaultInline1" name="operation"
+                       value="ADD" checked="checked">
                 <label class="custom-control-label" for="defaultInline1">add</label>
             </div>
 
             <!-- Default inline 2-->
             <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" class="custom-control-input" id="defaultInline2" name="inlineDefaultRadiosExample"
-                       value="2">
+                <input type="radio" class="custom-control-input" id="defaultInline2" name="operation"
+                       value="SUBTRACT">
                 <label class="custom-control-label" for="defaultInline2">subtract</label>
             </div>
 
             <!-- Default inline 3-->
             <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" class="custom-control-input" id="defaultInline3" name="inlineDefaultRadiosExample"
-                       value="3">
+                <input type="radio" class="custom-control-input" id="defaultInline3" name="operation"
+                       value="DIVIDE">
                 <label class="custom-control-label" for="defaultInline3">divide</label>
             </div>
-            <!-- Default inline 3-->
+            <!-- Default inline 4-->
             <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" class="custom-control-input" id="defaultInline4" name="inlineDefaultRadiosExample"
-                       value="4">
+                <input type="radio" class="custom-control-input" id="defaultInline4" name="operation"
+                       value="MULTIPLY">
                 <label class="custom-control-label" for="defaultInline4">multiply</label>
             </div>
         </div>
@@ -56,6 +56,10 @@
             <button type="submit" class="btn btn-primary ">calculate</button>
         </div>
     </form>
+    <div>
+        ${result}
+        ${errorMessage}
+    </div>
 </div>
 
 
