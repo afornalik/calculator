@@ -52,6 +52,8 @@
                 <label class="custom-control-label" for="defaultInline4">multiply</label>
             </div>
         </div>
+
+
         <div class="form-group mt-3">
             <button type="submit" class="btn btn-primary ">calculate</button>
         </div>

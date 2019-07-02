@@ -1,6 +1,7 @@
 package service;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class CalculateImpl implements Calculate {
 
@@ -18,7 +19,7 @@ public class CalculateImpl implements Calculate {
 
     @Override
     public BigDecimal divide(BigDecimal firstNumber, BigDecimal secondNumber) throws ArithmeticException{
-        return firstNumber.divide(secondNumber);
+        return firstNumber.divide(secondNumber,2, RoundingMode.HALF_UP);
     }
 
     @Override
