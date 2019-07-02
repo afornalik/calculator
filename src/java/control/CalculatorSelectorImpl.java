@@ -26,6 +26,7 @@ public class CalculatorSelectorImpl implements CalculatorSelector{
             case SUBTRACT: return calculate.subtract(firstNumber,secondNumber);
             case DIVIDE: return calculate.divide(firstNumber,secondNumber);
             case MULTIPLY: return  calculate.multiply(firstNumber,secondNumber);
+            case STRONG: return  calculate.strong(firstNumber);
         }
         return null;
     }

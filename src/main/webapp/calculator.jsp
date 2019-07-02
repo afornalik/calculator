@@ -51,6 +51,12 @@
                        value="MULTIPLY">
                 <label class="custom-control-label" for="defaultInline4">multiply</label>
             </div>
+            <!-- Default inline 4-->
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="defaultInline5" name="operation"
+                       value="STRONG">
+                <label class="custom-control-label" for="defaultInline5">strong</label>
+            </div>
         </div>
 
 

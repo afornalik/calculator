@@ -27,5 +27,20 @@ public class CalculateImpl implements Calculate {
         return firstNumber.multiply(secondNumber);
     }
 
+    @Override
+    public BigDecimal strong(BigDecimal number) {
+        return calculateStrong(number);
+    }
+
+    public BigDecimal calculateStrong(BigDecimal number) {
+
+        BigDecimal result = BigDecimal.ONE;
+
+        for(int i = 1; i<= number.intValue(); i++) {
+            result = result.multiply(BigDecimal.valueOf(i));
+        }
+        return result;
+    }
+
 
 }
