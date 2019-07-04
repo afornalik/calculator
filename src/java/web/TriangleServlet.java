@@ -1,5 +1,8 @@
 package web;
 
+import service.DrawTriangle;
+import service.DrawTriangleLeft;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,6 +14,8 @@ import java.io.IOException;
 
 @WebServlet(value = "/triangleServlet")
 public class TriangleServlet extends HttpServlet {
+
+    DrawTriangle triangle;
 
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -24,6 +29,9 @@ public class TriangleServlet extends HttpServlet {
         } catch (Exception e) {
             session.setAttribute("error", "type number !");
         }
+
+        triangle = new DrawTriangleLeft();
+        session.setAttribute("triangleLeft",triangle.crateTriangle(rows));
 
         session.setAttribute("rows", rows);
         requestDispatcher.include(request, response);
