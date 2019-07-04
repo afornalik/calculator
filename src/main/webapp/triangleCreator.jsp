@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Andrzej
@@ -6,6 +7,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <html>
 <head>
     <title>Task 2 | triangle</title>
@@ -18,7 +20,19 @@
 
 </head>
 <body>
-<div class="container">
+<nav class="navbar navbar-dark bg-dark">
+    <div class="">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">JSP homework - SDA</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="calculator.jsp">task 1 - calculator </a></li>
+            <li class="nav-item"><a class="nav-link"    href="triangleCreator.jsp">task 2 - triangle  </a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container col-6 mt-4">
     <form method="get" action="triangleServlet">
         <div class="form-group">
             <label aria-labelledby="rNumber">Rows</label>
@@ -26,9 +40,16 @@
             <small id="rNumber">Write how many rows triangle should have.</small>
         </div>
         <div class="form-group">
-            <input type="submit" class="btn btn-danger" value="draw rectangle">
+            <input type="submit" class="btn btn-danger" value="draw triangle">
         </div>
     </form>
+
+    <c:forEach var="row" items="${triangleLeft}">
+        <c:forEach var="cell" items="${row}">
+            <c:out value="${cell}" />
+        </c:forEach>
+        <br>
+    </c:forEach>
 </div>
 
 

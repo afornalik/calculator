@@ -12,20 +12,32 @@
     <title>Task 1 | calculator</title>
 </head>
 <body>
-<h2>Calculator</h2>
-<div class="container mt-4">
+<nav class="navbar navbar-dark bg-dark">
+    <div class="">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">JSP homework - SDA</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="calculator.jsp">task 1 - calculator </a></li>
+            <li class="nav-item"><a class="nav-link"    href="triangleCreator.jsp">task 2 - triangle  </a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="container col-6 mt-4   ">
     <form method="post" action="calculator">
-        <div class="form-group col-6 fa fa-hand-o-down">
+        <div class="form-group  fa fa-hand-o-down">
             <label for="f1">first number</label>
             <input type="number" name="firstNumber" class="form-control" id="f1" value="${fNumber}"/>
         </div>
 
-        <div class="form-group col-6  fa fa-hand-o-down">
+        <div class="form-group   fa fa-hand-o-down">
             <label for="f2">second number</label>
             <input type="number" name="secondNumber" class="form-control" id="f2" value="${sNumber}"/>
         </div>
         <!-- Default inline 1-->
-        <div class="form-group col-6 mt-3">
+        <div class="form-group mt-3">
             <div class="custom-control custom-radio custom-control-inline">
                 <input type="radio" class="custom-control-input" id="defaultInline1" name="operation"
                        value="ADD" checked="checked">
