@@ -16,7 +16,7 @@
     </div>
         <ul class="nav navbar-nav">
             <li class="nav-item"><a class="nav-link" href="calculator.jsp">task 1 - calculator </a></li>
-            <li class="nav-item"><a class="nav-link"    href="#">task 2 - not ready  </a></li>
+            <li class="nav-item"><a class="nav-link"    href="triangleCreator.jsp">task 2 - triangle(not ready)  </a></li>
         </ul>
     </div>
 </nav>
