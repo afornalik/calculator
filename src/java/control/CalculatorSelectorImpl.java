@@ -1,6 +1,6 @@
 package control;
 
-import service.Calculate;
+import service.calculator.Calculate;
 
 import java.math.BigDecimal;
 

@@ -1,6 +1,4 @@
-package service;
-
-import java.util.Arrays;
+package service.triangle;
 
 public class DrawTriangleLeft implements DrawTriangle {
 

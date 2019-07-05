@@ -1,4 +1,4 @@
-package service;
+package service.triangle;
 
 public interface DrawTriangle {
 

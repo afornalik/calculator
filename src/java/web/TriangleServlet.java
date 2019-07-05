@@ -1,7 +1,7 @@
 package web;
 
-import service.DrawTriangle;
-import service.DrawTriangleLeft;
+import service.triangle.DrawTriangle;
+import service.triangle.DrawTriangleLeft;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

@@ -3,7 +3,7 @@ package web;
         import control.CalculatorSelector;
         import control.CalculatorSelectorImpl;
         import control.Operations;
-        import service.CalculateImpl;
+        import service.calculator.CalculateImpl;
 
         import javax.servlet.RequestDispatcher;
         import javax.servlet.ServletException;
@@ -13,7 +13,6 @@ package web;
         import javax.servlet.http.HttpServletResponse;
         import java.io.IOException;
         import java.math.BigDecimal;
-        import java.util.Map;
 
 @WebServlet(value="/calculator")
 public class CalculatorServlet extends HttpServlet {
